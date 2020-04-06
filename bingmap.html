@@ -26,19 +26,24 @@
 
     //var map = L.map('map').setView([51.505, -0.09], 13)
     
-    var map = L.map("map", {center: [9.809375, 106.185672], zoom: 13});
+   // var map = L.map("map", {center: [9.809375, 106.185672], zoom: 13});
 
     //var bingLayer = L.tileLayer.bing(BING_KEY,{type: 'AerialWithLabels'}).addTo(map)
     
 	//var map = L.map('map', {maxZoom: 20}).setView([51.505, -0.09], 18)
 
+	
+
+	//var bingLayer = L.tileLayer.bing(options).addTo(map);
+
+	    var map = L.map('map', {maxZoom: 20}).setView([51.505, -0.09], 18)
+
 	var options = {
-	  bingMapsKey: 'AuhiCJHlGzhg93IqUH_oCpl_-ZUrIE6SPftlyGYUvr9Amx5nzA-WqGcPquyFZl4L',
-	  maxNativeZoom: 13,
-		imagerySet: "AerialWithLabels",
+		bingMapsKey: 'AuhiCJHlGzhg93IqUH_oCpl_-ZUrIE6SPftlyGYUvr9Amx5nzA-WqGcPquyFZl4L',
+	  maxNativeZoom: 18,
+	  imagerySet: "AerialWithLabels",
 	  maxZoom: 20
 	}
-
 	var bingLayer = L.tileLayer.bing(options).addTo(map);
     
  
