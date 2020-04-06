@@ -28,8 +28,8 @@
     
     var map = L.map("map", {center: [9.809375, 106.185672], zoom: 13});
 
-
-    var bingLayer = L.tileLayer.bing(BING_KEY).addTo(map)
+    var bingLayer = L.tileLayer.bing(BING_KEY,{type: 'AerialWithLabels'}).addTo(map)
+    
     </script>
 
     </script>
